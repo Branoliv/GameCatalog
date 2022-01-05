@@ -1,4 +1,4 @@
-# GameCatalog
+# Game Catalog
 
 
 [![npm](https://img.shields.io/npm/l/react)](https://github.com/Branoliv/DCE/blob/master/LICENSE)
