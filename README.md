@@ -6,8 +6,8 @@
 
 ## SOBRE O PROJETO
 
-<p align="justify">Api desenvolvida para estudo e exercício no bootcamp Take Blip Fullstack Developer #2 pela DIO. Foram utilizados conceitos de POO (programação orienta a objetos)
-bem como melhores praticas na construção de APIs Rest.</p>
+<p align="justify">Api desenvolvida para estudo e exercício no bootcamp Take Blip Fullstack Developer #2 pela DIO. Foram utilizados conceitos de POO (programação orienta a objetos) 
+bem como melhores práticas na construção de APIs Rest.</p>
 
 # Tecnologias utilizadas
 ## API :books:
