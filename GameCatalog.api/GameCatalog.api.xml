@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GameCatalog.api</name>
+    </assembly>
+    <members>
+        <member name="M:GameCatalog.api.Controllers.GameController.GamesAsync(System.Int32,System.Int32)">
+            <summary>
+            Busca todos os jogos de forma paginada.
+            </summary>
+             <remarks>
+            Não é possível retornar os jogos sem paginação
+            </remarks>
+            <param name="pageNumber">Indica qual página está sendo consultada. Mínimo 1</param>
+            <param name="quantityItemsList">Indica a quantidade de registros por página</param>
+            <response code="200">Retorna a lista de jogos</response>
+            <response code="204">Caso não haja jogos</response>
+            <response code="422">Caso haja algum erro</response>
+            <returns>Retorna uma lista de GameDTO de forma assíncrona</returns>
+        </member>
+        <member name="M:GameCatalog.api.Controllers.GameController.GetGameByIdAsync(System.Guid)">
+            <summary>
+            Busca jogo pelo número de Id.
+            </summary>
+            <param name="idGame">Id referente a qual jogo deve ser pesquisado.</param>
+            <response code="200">Retorna o jogo pesquisado</response>
+            <response code="204">Caso o jogo não exista</response>
+            <response code="422">Caso haja algum erro</response>
+            <returns>Retorna objeto GameDTO de forma assíncrona</returns>
+        </member>
+        <member name="M:GameCatalog.api.Controllers.GameController.AddGameAsync(GameCatalog.Domain.Model.DTO.GameAddDTO)">
+            <summary>
+            Adiciona um novo jogo
+            </summary>
+            <param name="gameAddDTO">Objeto GameDTO que representa os dados do jogo.</param>
+            <response code="201">Retorna os dados jogo adicionado</response>
+            <response code="422">Caso haja algum erro no cadastro do jogo</response>
+            <returns>Retorna objeto GameDTO de forma assíncrona</returns>
+        </member>
+        <member name="M:GameCatalog.api.Controllers.GameController.UpdateGameAsync(GameCatalog.Domain.Model.DTO.GameDTO)">
+            <summary>
+            Atualiza um jogo existente  de forma assíncrona
+            </summary>
+            <param name="gameDTO">Objeto GameDTO com as atualizações a serem realizadas no registro.</param>
+            <response code="200">O jogo foi atualizado com sucesso</response>
+            <returns></returns>
+        </member>
+        <member name="M:GameCatalog.api.Controllers.GameController.DeleteGameAsync(System.Guid)">
+            <summary>
+            Apaga o registro de um determinado jogo de forma assíncrona.
+            </summary>
+            <param name="idGame">Id referente ao jogo a ser apagado.</param>
+            <response code="200">O jogo foi excluido com sucesso.</response>
+            <response code="204">Jogo não excluído.</response>
+            <response code="422">Caso haja algum erro na exclusão do jogo</response>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
