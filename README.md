@@ -12,8 +12,8 @@ bem como melhores práticas na construção de APIs Rest.</p>
 # Tecnologias utilizadas
 ## API :books:
      
-   - [Sdk="Microsoft.NET.Sdk.Web](https://docs.microsoft.com/pt-br/dotnet/core/whats-new/dotnet-5)  varsão 5.0
-   - [Swashbuckle.AspNetCore.Annotations](https://github.com/domaindrivendev/Swashbuckle.AspNetCore): versão 5.0.0.2012
+   - [Microsoft.NET.Sdk.Web](https://docs.microsoft.com/pt-br/dotnet/core/whats-new/dotnet-5): versão 5.0
+   - [Swashbuckle.AspNetCore.Annotations](https://github.com/domaindrivendev/Swashbuckle.AspNetCore): versão 6.2.3
    - [Swashbuckle.AspNetCore](https://github.com/domaindrivendev/Swashbuckle.AspNetCore): versão 6.2.3
    - [Microsoft.EntityFrameworkCore.SqlServer](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer): versão 5.0.13
    - [Microsoft.EntityFrameworkCore.Tools](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools): versão 5.0.13
@@ -22,14 +22,14 @@ bem como melhores práticas na construção de APIs Rest.</p>
 
 ## API
 
+### Clonar Repositório
 ```bash
-# clonar repositório
 git clone https://github.com/Branoliv/GameCatalog
 ```
-```Visual Studio 
-# Aplicar migrations para criação do banco de dados (https://docs.microsoft.com/pt-br/ef/core/cli/powershell#update-database)
-- Console do Gerenciador de Pacotes
-PM> Update-Database
+### Visual Studio > Console do Gerenciador de Pacotes 
+### https://docs.microsoft.com/pt-br/ef/core/cli/powershell#update-database
+```bash 
+ Update-Database
 ```
 
 # Autor
