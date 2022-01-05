@@ -10,8 +10,9 @@
 bem como melhores praticas na construção de APIs Rest.</p>
 
 # Tecnologias utilizadas
-## App :books:
+## API :books:
      
+   - [Sdk="Microsoft.NET.Sdk.Web](https://docs.microsoft.com/pt-br/dotnet/core/whats-new/dotnet-5)  varsão 5.0
    - [Swashbuckle.AspNetCore.Annotations](https://github.com/domaindrivendev/Swashbuckle.AspNetCore): versão 5.0.0.2012
    - [Swashbuckle.AspNetCore](https://github.com/domaindrivendev/Swashbuckle.AspNetCore): versão 6.2.3
    - [Microsoft.EntityFrameworkCore.SqlServer](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer): versão 5.0.13
@@ -19,11 +20,16 @@ bem como melhores praticas na construção de APIs Rest.</p>
 
 # Como executar o projeto
 
-## App
+## API
 
 ```bash
 # clonar repositório
 git clone https://github.com/Branoliv/GameCatalog
+```
+```Visual Studio 
+# Aplicar migrations para criação do banco de dados (https://docs.microsoft.com/pt-br/ef/core/cli/powershell#update-database)
+- Console do Gerenciador de Pacotes
+PM> Update-Database
 ```
 
 # Autor
